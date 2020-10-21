@@ -4,7 +4,7 @@ require "yaml"
 
 def load_library(file)
   result = {}
-  file = YAML.load_file('lib/emoticons.yml')
+  file = YAML.load_file(file)
   file.each do |inner_key, inner_array|
     result[inner_key] = {:english => inner_array[0], :japanese => inner_array[1]}
   end
