@@ -24,7 +24,8 @@ end
 def get_english_meaning (file,emote)
   list_of_emote = load_library(file)
 list_of_emote.each do |key1, value1|
-if value1[1] == emote
+if value1[:japanese] == emote
+  binding.pry
    return key1
 end
 end
