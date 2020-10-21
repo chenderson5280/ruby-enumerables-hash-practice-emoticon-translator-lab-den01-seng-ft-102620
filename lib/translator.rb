@@ -21,11 +21,9 @@ def get_japanese_emoticon (file,emote)
 "Sorry, that emoticon was not found"
 end
 
-
-
 def get_english_meaning (file,emote)
-  result2 = YAML.load_file('lib/emoticons.yml')
-result2.each do |key1, value1|
+  list_of_emote = load_library(file)
+list_of_emote.each do |key1, value1|
 if value1[1] == emote
    return key1
 end
