@@ -19,8 +19,8 @@ def get_japanese_emoticon (file,emote)
       if value[:english] == emote
         #binding.pry
          return value[:japanese]
-      
-         
+
+
       end
 
     end
