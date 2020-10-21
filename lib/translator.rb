@@ -12,7 +12,6 @@ result
 end
 
 def get_japanese_emoticon (file,emote)
-  final_result = ""
   list_of_emote = load_library(file)
 #result1 = load_library(YAML.load_file('lib/emoticons.yml')
   list_of_emote.each do |key,value|
