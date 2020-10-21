@@ -12,15 +12,19 @@ result
 end
 
 def get_japanese_emoticon (file,emote)
-list_of_emote = load_library(file)
+  final_result = ""
+  list_of_emote = load_library(file)
 #result1 = load_library(YAML.load_file('lib/emoticons.yml')
-list_of_emote.each do |key,value|
+  list_of_emote.each do |key,value|
 #  binding.pry
- if value[:english] == emote
-   return value[:japanese]
-  else return "Sorry, that emoticon was not found"
- end
-end
+      if value[:english] == emote
+         final_result << value[:japanese]
+      else 
+        final_result << "Sorry, that emoticon was not found"
+      end
+      
+    end
+    final_result
 end
 
 
