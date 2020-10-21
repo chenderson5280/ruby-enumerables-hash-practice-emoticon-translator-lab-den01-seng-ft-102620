@@ -18,13 +18,13 @@ def get_japanese_emoticon (file,emote)
   list_of_emote.each do |key,value|
 #  binding.pry
       if value[:english] == emote
-         final_result = value[:japanese]
+         return value[:japanese]
       else
-        final_result = "Sorry, that emoticon was not found"
+        return "Sorry, that emoticon was not found"
       end
 
     end
-    final_result
+    
 end
 
 
