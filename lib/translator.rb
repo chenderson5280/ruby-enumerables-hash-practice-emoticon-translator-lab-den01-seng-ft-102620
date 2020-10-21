@@ -24,7 +24,7 @@ def get_japanese_emoticon (file,emote)
       end
 
     end
-    
+
 end
 
 
