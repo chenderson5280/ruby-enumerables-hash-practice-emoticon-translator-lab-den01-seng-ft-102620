@@ -28,4 +28,5 @@ if value1[1] == emote
    return key1
 end
 end
+"Sorry, that emoticon was not found"
 end
