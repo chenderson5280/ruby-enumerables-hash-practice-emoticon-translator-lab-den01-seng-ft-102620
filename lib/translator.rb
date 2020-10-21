@@ -23,7 +23,7 @@ end
 
 
 
-def get_english_meaning (result2,emote)
+def get_english_meaning (file,emote)
   result2 = YAML.load_file('lib/emoticons.yml')
 result2.each do |key1, value1|
 if value1[1] == emote
